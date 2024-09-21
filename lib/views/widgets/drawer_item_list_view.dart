@@ -3,16 +3,23 @@ import 'package:dash_board_app/models/drawer_item_model.dart';
 import 'package:dash_board_app/views/widgets/drawer_item.dart';
 import 'package:flutter/material.dart';
 
-class DrawerItemListView extends StatelessWidget {
+class DrawerItemListView extends StatefulWidget {
   const DrawerItemListView({super.key});
-  static const List<DrawerItemModel> items = [
-    DrawerItemModel(title: 'Dashboard', image: Assets.imagesDashboard),
-    DrawerItemModel(title: 'My Transaction', image: Assets.imagesMyTransctions),
-    DrawerItemModel(title: 'Statistics', image: Assets.imagesStatistics),
-    DrawerItemModel(title: 'Wallet Account', image: Assets.imagesWalletAccount),
-    DrawerItemModel(title: 'My Investments', image: Assets.imagesMyInvestments),
+
+  @override
+  State<DrawerItemListView> createState() => _DrawerItemListViewState();
+}
+
+class _DrawerItemListViewState extends State<DrawerItemListView> {
+  final List<DrawerItemModel> items = [
+    const DrawerItemModel(title: 'Dashboard', image: Assets.imagesDashboard),
+    const DrawerItemModel(title: 'My Transaction', image: Assets.imagesMyTransctions),
+    const DrawerItemModel(title: 'Statistics', image: Assets.imagesStatistics),
+    const DrawerItemModel(title: 'Wallet Account', image: Assets.imagesWalletAccount),
+    const DrawerItemModel(title: 'My Investments', image: Assets.imagesMyInvestments),
   ];
 
+  int active=0;
   @override
   Widget build(BuildContext context) {
     return ListView.builder(
@@ -20,9 +27,18 @@ class DrawerItemListView extends StatelessWidget {
       physics: const NeverScrollableScrollPhysics(),
       itemCount: items.length,
       itemBuilder: (context, index) {
-        return Padding(
-          padding: const EdgeInsets.only(top: 20.0),
-          child: DrawerItem(drawerItemModel: items[index]),
+        return GestureDetector(
+          onTap: () {
+            if (active != index) {
+              setState(() {
+              active=index;
+            });
+            }
+          },
+          child: Padding(
+            padding: const EdgeInsets.only(top: 20.0),
+            child: DrawerItem(drawerItemModel: items[index], isSelected: active ==index,),
+          ),
         );
       },
     );
