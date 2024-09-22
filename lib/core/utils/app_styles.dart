@@ -8,6 +8,13 @@ abstract class AppStyles {
     fontFamily: 'Montserrat',
     fontWeight: FontWeight.w400,
   );
+
+  static const TextStyle styleRegular14 = TextStyle(
+    color: Color(0xFFAAAAAA),
+    fontSize: 14,
+    fontFamily: 'Montserrat',
+    fontWeight: FontWeight.w400,
+  );
   
   static const TextStyle styleRegular16 = TextStyle(
     color: Color(0xFF064060),
