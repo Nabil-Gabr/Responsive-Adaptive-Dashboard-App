@@ -1,5 +1,6 @@
 import 'package:dash_board_app/core/utils/app_images.dart';
 import 'package:dash_board_app/models/drawer_item_model.dart';
+import 'package:dash_board_app/models/user_info_item_model.dart';
 import 'package:dash_board_app/views/widgets/drawer_item_list_view.dart';
 import 'package:dash_board_app/views/widgets/in_active_drawer_item.dart';
 import 'package:dash_board_app/views/widgets/user_info_list_tile.dart';
@@ -16,9 +17,11 @@ class CustomDrawer extends StatelessWidget {
         slivers: [
           SliverToBoxAdapter(
             child: UserInfoListTile(
-                title: 'Lekan Okeowo',
-                subtitle: 'demo@gmail.com',
-                image: Assets.imagesAvatar3),
+              itemModel: UserInfoItemModel(
+                  title: 'Lekan Okeowo',
+                  subTitle: 'demo@gmail.com',
+                  image: Assets.imagesAvatar3),
+            ),
           ),
           SliverToBoxAdapter(
             child: SizedBox(
@@ -38,7 +41,9 @@ class CustomDrawer extends StatelessWidget {
                 InActiveDrawerItem(
                     drawerItemModel: DrawerItemModel(
                         title: 'Setting system', image: Assets.imagesSettings)),
-                        SizedBox(height: 20,),
+                SizedBox(
+                  height: 20,
+                ),
                 InActiveDrawerItem(
                     drawerItemModel: DrawerItemModel(
                         title: 'Logout account', image: Assets.imagesLogout)),
