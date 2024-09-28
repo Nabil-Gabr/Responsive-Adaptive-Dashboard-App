@@ -1,5 +1,5 @@
 import 'package:dash_board_app/views/widgets/custom_all_expensess_and_quick_invoice.dart';
-import 'package:dash_board_app/views/widgets/my_cards_section.dart';
+import 'package:dash_board_app/views/widgets/my_cards_and_transction_history_section.dart';
 import 'package:flutter/material.dart';
 
 class DashboardDesktopLayout extends StatelessWidget {
@@ -17,7 +17,7 @@ class DashboardDesktopLayout extends StatelessWidget {
           flex: 2,
           child: CustomAllExpensessAndQuickInvoice(),
         ),
-        Expanded(child: MyCardsSection()),
+        Expanded(child: MyCardsAndTransctionHistorySection()),
       ],
     );
   }
