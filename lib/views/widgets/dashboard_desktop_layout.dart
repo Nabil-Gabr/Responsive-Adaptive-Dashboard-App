@@ -18,6 +18,9 @@ class DashboardDesktopLayout extends StatelessWidget {
           child: CustomAllExpensessAndQuickInvoice(),
         ),
         Expanded(child: MyCardsAndTransctionHistorySection()),
+
+        // //test
+        // Expanded(child: IncomeSection()),
       ],
     );
   }
