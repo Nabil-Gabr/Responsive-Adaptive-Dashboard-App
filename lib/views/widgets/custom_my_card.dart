@@ -8,6 +8,8 @@ class CustomMyCard extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
+    double width = MediaQuery.sizeOf(context).width;
+    print('===========================================================$width');
     return AspectRatio(
       aspectRatio: 84 / 43,
       child: Container(
@@ -19,42 +21,43 @@ class CustomMyCard extends StatelessWidget {
           borderRadius: BorderRadius.all(Radius.circular(12)),
         ),
         child:  Padding(
-          padding: const EdgeInsets.only(top: 20.0,left: 31,right: 24,bottom: 27),
+          padding: const EdgeInsets.only(left: 31,right: 24),
           child: Column(
             crossAxisAlignment: CrossAxisAlignment.end,
             children: [
+              const Flexible(child: SizedBox(height: 20,)),
               Row(
                 mainAxisAlignment: MainAxisAlignment.spaceBetween,
                 children: [
                    Column(
                     crossAxisAlignment: CrossAxisAlignment.start,
                     children: [
-                      Text('Name card',style: AppStyles.styleRegular16.copyWith(
+                      Text('Name card',style: AppStyles.styleRegular16(context).copyWith(
                         color: Colors.white
                       ),),
-                      const Text('Syah Bandi',style: AppStyles.styleMedium20,)
+                      Text('Syah Bandi',style: AppStyles.styleMedium20(context),)
                     ],
                   ),
           
-                  Padding(
-                    padding: const EdgeInsets.only(right: 21.0),
-                    child: SvgPicture.asset(Assets.imagesGallery),
-                  ),
+                  SvgPicture.asset(Assets.imagesGallery),
                 ],
               ),
               const Expanded(child: SizedBox()),
                Column(
                     crossAxisAlignment: CrossAxisAlignment.end,
                     children: [
-                      Text('0918 8124 0042 8129',style: AppStyles.styleSemiBold24.copyWith(
-                        color: Colors.white
+                      Text('0918 8124 0042 8129',style: AppStyles.styleSemiBold24(context).copyWith(
+                        color: Colors.white,
+                        fontSize:  width >= 1200 && width < 1210 ? 18 : null 
                       ),),
-                      Text('12/20 - 124',style: AppStyles.styleRegular16.copyWith(
+                      Text('12/20 - 124',style: AppStyles.styleRegular16(context).copyWith(
                         color: Colors.white
                       ),)
                     ],
                   ),
+                  const Flexible(child: SizedBox(height: 27,))
             ],
+            
           ),
         ),
       ),

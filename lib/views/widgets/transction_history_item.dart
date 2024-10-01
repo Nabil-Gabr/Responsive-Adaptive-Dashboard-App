@@ -15,16 +15,16 @@ class TransctionHistoryItem extends StatelessWidget {
       child: ListTile(
         title: Text(
           itteModel.title,
-          style: AppStyles.styleSemiBold16,
+          style: AppStyles.styleSemiBold16(context),
         ),
         subtitle: Text(
           itteModel.date,
           style:
-              AppStyles.styleRegular16.copyWith(color: const Color(0xffAAAAAA)),
+              AppStyles.styleRegular16(context).copyWith(color: const Color(0xffAAAAAA)),
         ),
         trailing: Text(
           itteModel.price,
-          style: AppStyles.styleSemiBold20.copyWith(
+          style: AppStyles.styleSemiBold20(context).copyWith(
             color: itteModel.isWithdrawal
                 ? const Color(0xffF3735E)
                 : const Color(0xff7DD97B),

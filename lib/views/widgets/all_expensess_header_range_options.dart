@@ -15,11 +15,11 @@ class AllExpensessHeaderRangeOptions extends StatelessWidget {
         borderRadius: BorderRadius.all(Radius.circular(12)),
       ),
       
-      child: const Row(
+      child:  Row(
         children: [
-          Text('Monthly',style: AppStyles.styleMedium16,),
-          SizedBox(width: 18,),
-          Icon(Icons.keyboard_arrow_down,color: Color(0xFF064061),)
+          Text('Monthly',style: AppStyles.styleMedium16(context),),
+          const SizedBox(width: 18,),
+          const Icon(Icons.keyboard_arrow_down,color: Color(0xFF064061),)
         ],
       ),
     );

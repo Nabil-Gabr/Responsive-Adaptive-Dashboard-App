@@ -19,11 +19,11 @@ class UserInfoListTile extends StatelessWidget {
         leading: SvgPicture.asset(itemModel.image),
         title: Text(
           itemModel.title,
-          style: AppStyles.styleSemiBold16,
+          style: AppStyles.styleSemiBold16(context),
         ),
         subtitle: Text(
           itemModel.subTitle,
-          style: AppStyles.styleRegular12,
+          style: AppStyles.styleRegular12(context),
         ),
       ),
     );

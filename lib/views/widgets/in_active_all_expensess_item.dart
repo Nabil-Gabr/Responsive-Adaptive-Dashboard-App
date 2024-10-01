@@ -27,21 +27,21 @@ class InActiveAllExpensessItem extends StatelessWidget {
           ),
           Text(
             itemModel.title,
-            style: AppStyles.styleSemiBold16,
+            style: AppStyles.styleSemiBold16(context),
           ),
           const SizedBox(
             height: 8,
           ),
           Text(
             itemModel.data,
-            style: AppStyles.styleRegular14,
+            style: AppStyles.styleRegular14(context),
           ),
           const SizedBox(
             height: 16,
           ),
           Text(
             itemModel.price,
-            style: AppStyles.styleSemiBold24,
+            style: AppStyles.styleSemiBold24(context),
           ),
         ],
       ),

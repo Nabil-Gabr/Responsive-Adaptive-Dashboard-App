@@ -10,18 +10,14 @@ class MyCardsAndTransctionHistorySection extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return const CustomBackgroundContainer(
-      child: CustomScrollView(
-        slivers: [
-          SliverToBoxAdapter(child: SizedBox(height: 40,)),
-          SliverToBoxAdapter(child: MyCardsSection()),
+      child: Column(
+        children: [
+          
+          MyCardsSection(),
 
-          SliverToBoxAdapter(child: SizedBox(height: 50,)),
-
-          SliverToBoxAdapter(child: Divider(height: 40,color: Color(0xffF1F1F1),)),
-
-          SliverToBoxAdapter(child: TransctionHistorySection()),
-          SliverToBoxAdapter(child: SizedBox(height: 24,)),
-          SliverToBoxAdapter(child: IncomeSection(),),
+          TransctionHistorySection(),
+          SizedBox(height: 24,),
+          IncomeSection(),
         ],
       )
     );

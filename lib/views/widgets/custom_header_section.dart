@@ -13,7 +13,7 @@ class CustomHeaderSection extends StatelessWidget {
     return  Row(
       mainAxisAlignment: MainAxisAlignment.spaceBetween,
       children: [
-        Text(titleSection,style: AppStyles.styleSemiBold20,),
+        Text(titleSection,style: AppStyles.styleSemiBold20(context),),
         const AllExpensessHeaderRangeOptions(),
       ],
     );

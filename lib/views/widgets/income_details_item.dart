@@ -8,49 +8,24 @@ class IncomeDetailsItem extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return Row(
-      mainAxisAlignment: MainAxisAlignment.spaceBetween,
-      crossAxisAlignment: CrossAxisAlignment.start,
-      children: [
-        Row(
-          children: [
-            Container(
-              width: 6,
-              height: 6,
-              decoration: BoxDecoration(
-                  color: itemModel.leadingColor,
-                  borderRadius: const BorderRadius.all(Radius.circular(12))),
-            ),
-            const SizedBox(width: 4,),
-            Text(
-              itemModel.title,
-              style: AppStyles.styleRegular12,
-            ),
-          ],
-        ),
-        Text(
-          itemModel.trailing,
-          style: AppStyles.styleRegular12,
-        ),
-      ],
-    )
-        // ListTile(
-        //   leading: Container(
-        //     width: 6,
-        //     height: 6,
-        //     decoration: BoxDecoration(
-        //         color: itemModel.leadingColor,
-        //         borderRadius: const BorderRadius.all(Radius.circular(12))),
-        //   ),
-        //   title: Text(
-        //     itemModel.title,
-        //     style: AppStyles.styleRegular12,
-        //   ),
-        //   trailing: Text(
-        //     itemModel.trailing,
-        //     style: AppStyles.styleRegular12,
-        //   ),
-        // )
+    return 
+        ListTile(
+          leading: Container(
+            width: 12,
+            height: 12,
+            decoration: BoxDecoration(
+                color: itemModel.leadingColor,
+                borderRadius: const BorderRadius.all(Radius.circular(12))),
+          ),
+          title: Text(
+            itemModel.title,
+            style: AppStyles.styleRegular16(context),
+          ),
+          trailing: Text(
+            itemModel.trailing,
+            style: AppStyles.styleMedium16(context),
+          ),
+        )
         ;
   }
 }

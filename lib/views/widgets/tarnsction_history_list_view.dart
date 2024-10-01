@@ -33,13 +33,20 @@ class TarnsctionHistoryListView extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return ListView.builder(
-      shrinkWrap: true,
-      physics: const NeverScrollableScrollPhysics(),
-      itemCount: itteModel.length,
-      itemBuilder: (context, index) {
-        return  TransctionHistoryItem(itteModel: itteModel[index],);
-      },
+
+    return Column(
+      children: itteModel.map(
+              (e) => TransctionHistoryItem(itteModel: e),
+            )
+            .toList(),
     );
+    // return ListView.builder(
+    //   shrinkWrap: true,
+    //   physics: const NeverScrollableScrollPhysics(),
+    //   itemCount: itteModel.length,
+    //   itemBuilder: (context, index) {
+    //     return  TransctionHistoryItem(itteModel: itteModel[index],);
+    //   },
+    // );
   }
 }

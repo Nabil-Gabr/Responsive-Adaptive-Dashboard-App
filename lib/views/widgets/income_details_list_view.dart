@@ -7,39 +7,42 @@ class IncomeDetailsListView extends StatelessWidget {
 
   static const List<IncomeDetailsItemModel> itemModel=[
     IncomeDetailsItemModel(
-      title: 'tit', 
-      trailing: '40', 
+      title: 'Design service', 
+      trailing: '40%', 
       leadingColor: Color(0xff208CC8),
     ),
 
     IncomeDetailsItemModel(
-      title: 'tit', 
-      trailing: '40', 
-      leadingColor: Color(0xff208CC8),
+      title: 'Design product', 
+      trailing: '25%', 
+      leadingColor: Color(0xff4EB7F2),
     ),
 
     IncomeDetailsItemModel(
-      title: 'tit', 
-      trailing: '40', 
-      leadingColor: Color(0xff208CC8),
+      title: 'Product royalti', 
+      trailing: '20%', 
+      leadingColor: Color(0xff064061),
     ),
 
     IncomeDetailsItemModel(
-      title: 'tit', 
-      trailing: '40', 
-      leadingColor: Color(0xff208CC8),
+      title: 'Other', 
+      trailing: '2%', 
+      leadingColor: Color(0xffE2DECD),
     ),
   ];
 
   @override
   Widget build(BuildContext context) {
-    return ListView.builder(
-      shrinkWrap: true,
-      physics: const NeverScrollableScrollPhysics(),
-      itemCount: itemModel.length,
-      itemBuilder:(context, index) {
-        return IncomeDetailsItem(itemModel: itemModel[index]);
-      } ,
+    return Column(
+      children: itemModel.map((e) => IncomeDetailsItem(itemModel: e) ,).toList(),
     );
+    // return ListView.builder(
+    //   shrinkWrap: true,
+    //   physics: const NeverScrollableScrollPhysics(),
+    //   itemCount: itemModel.length,
+    //   itemBuilder:(context, index) {
+    //     return IncomeDetailsItem(itemModel: itemModel[index]);
+    //   } ,
+    // );
   }
 }
