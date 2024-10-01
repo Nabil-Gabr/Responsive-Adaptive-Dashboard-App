@@ -15,7 +15,10 @@ class _IncomeChartDetailsState extends State<IncomeChartDetails> {
   Widget build(BuildContext context) {
     return Padding(
       padding: const EdgeInsets.all(24.0),
-      child: AspectRatio(aspectRatio: 1, child: PieChart(getPieChartData())),
+      child: AspectRatio(aspectRatio: 1, child: Padding(
+        padding: const EdgeInsets.all(24.0),
+        child: PieChart(getPieChartData()),
+      )),
     );
   }
 
@@ -34,7 +37,7 @@ class _IncomeChartDetailsState extends State<IncomeChartDetails> {
           //1
           PieChartSectionData(
             value: 22,
-            titlePositionPercentageOffset: asActive == 0 ? -1.2 : null,
+            titlePositionPercentageOffset: asActive == 0 ? 1.5 : null,
             title: asActive == 0 ? 'Other' : '22%',
             titleStyle: AppStyles.styleRegular16(context)
                 .copyWith(color: asActive == 0 ? null : Colors.white),
@@ -45,7 +48,7 @@ class _IncomeChartDetailsState extends State<IncomeChartDetails> {
           //2
           PieChartSectionData(
               value: 20,
-              titlePositionPercentageOffset: asActive == 1 ? -1.2 : null,
+              titlePositionPercentageOffset: asActive == 1 ? 1.5 : null,
               title: asActive == 1 ? 'Product royalti' : '20%',
               titleStyle: AppStyles.styleRegular16(context)
                   .copyWith(color: asActive == 1 ? null : Colors.white),
@@ -55,7 +58,7 @@ class _IncomeChartDetailsState extends State<IncomeChartDetails> {
           //3
           PieChartSectionData(
               value: 25,
-              titlePositionPercentageOffset: asActive == 2 ? -1.2 : null,
+              titlePositionPercentageOffset: asActive == 2 ? 1.4 : null,
               title: asActive == 2 ? 'Design product' : '25%',
               titleStyle: AppStyles.styleRegular16(context)
                   .copyWith(color: asActive == 2 ? null : Colors.white),
@@ -65,7 +68,7 @@ class _IncomeChartDetailsState extends State<IncomeChartDetails> {
           //4
           PieChartSectionData(
               value: 40,
-              titlePositionPercentageOffset: asActive == 3 ? -1.2 : null,
+              titlePositionPercentageOffset: asActive == 3 ? 1.4 : null,
               title: asActive == 3 ? 'Design service' : '40%',
               titleStyle: AppStyles.styleRegular16(context)
                   .copyWith(color: asActive == 3 ? null : Colors.white),
