@@ -10,15 +10,24 @@ class AllExpensessItemHeader extends StatelessWidget {
     return Row(
       mainAxisAlignment: MainAxisAlignment.spaceBetween,
       children: [
-        Container(
-          width: 60,
-          height: 60,
-          padding:const EdgeInsets.all(14),
-          decoration:const ShapeDecoration(
-            color:  Color(0xFFFAFAFA),
-            shape: OvalBorder()
+        Flexible(
+          child: ConstrainedBox(
+            constraints: const BoxConstraints(
+              maxWidth: 60,
+            ),
+            child: AspectRatio(
+              aspectRatio: 1,
+              child: Container(
+                width: 60,
+                height: 60,
+                decoration:const ShapeDecoration(
+                  color:  Color(0xFFFAFAFA),
+                  shape: OvalBorder()
+                ),
+                child: Center(child: SvgPicture.asset(image)),
+              ),
+            ),
           ),
-          child: SvgPicture.asset(image),
         ),
 
         const Icon(Icons.keyboard_arrow_right,color: Color(0xff064061),)

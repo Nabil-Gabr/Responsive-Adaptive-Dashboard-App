@@ -24,9 +24,18 @@ class DashboardDesktopLayout extends StatelessWidget {
                     ),
                     Expanded(
                       flex: 2,
-                      child: CustomAllExpensessAndQuickInvoice(),
+                      child: Padding(
+                    padding: EdgeInsets.only(top: 40.0),
+                    child: CustomAllExpensessAndQuickInvoice(),
+                  ),
                     ),
-                    Expanded(child: MyCardsAndTransctionHistorySection()),
+                    SizedBox(
+                      width: 32,
+                    ),
+                    Expanded(child: Padding(
+                      padding: EdgeInsets.only(top: 40.0),
+                      child: MyCardsAndTransctionHistorySection(),
+                    )),
                   ],
                 ),
               )
