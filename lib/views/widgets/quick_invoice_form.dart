@@ -10,17 +10,31 @@ class QuickInvoiceForm extends StatelessWidget {
       children: [
         Row(
           children: [
-            Expanded(child: CustomTitleTextField(title: 'Customer Name', hintText: 'Type customer name')),
-            SizedBox(width: 16 ,),
-            Expanded(child: CustomTitleTextField(title: 'Customer Email', hintText: 'Type customer email')),
+            Expanded(
+                child: CustomTitleTextField(
+                    title: 'Customer Name', hintText: 'Type customer name')),
+            SizedBox(
+              width: 16,
+            ),
+            Expanded(
+                child: CustomTitleTextField(
+                    title: 'Customer Email', hintText: 'Type customer email')),
           ],
         ),
-        SizedBox(height: 24,),
+        SizedBox(
+          height: 24,
+        ),
         Row(
           children: [
-            Expanded(child: CustomTitleTextField(title: 'Item name', hintText: 'Type customer name')),
-            SizedBox(width: 16 ,),
-            Expanded(child: CustomTitleTextField(title: 'Item mount', hintText: 'USD')),
+            Expanded(
+                child: CustomTitleTextField(
+                    title: 'Item name', hintText: 'Type customer name')),
+            SizedBox(
+              width: 16,
+            ),
+            Expanded(
+                child:
+                    CustomTitleTextField(title: 'Item mount', hintText: 'USD')),
           ],
         )
       ],

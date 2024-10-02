@@ -20,17 +20,17 @@ class AllExpensessItemHeader extends StatelessWidget {
               child: Container(
                 width: 60,
                 height: 60,
-                decoration:const ShapeDecoration(
-                  color:  Color(0xFFFAFAFA),
-                  shape: OvalBorder()
-                ),
+                decoration: const ShapeDecoration(
+                    color: Color(0xFFFAFAFA), shape: OvalBorder()),
                 child: Center(child: SvgPicture.asset(image)),
               ),
             ),
           ),
         ),
-
-        const Icon(Icons.keyboard_arrow_right,color: Color(0xff064061),)
+        const Icon(
+          Icons.keyboard_arrow_right,
+          color: Color(0xff064061),
+        )
       ],
     );
   }

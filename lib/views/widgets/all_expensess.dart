@@ -5,13 +5,15 @@ import 'package:flutter/material.dart';
 
 class AllExpensess extends StatelessWidget {
   const AllExpensess({super.key});
-  
+
   @override
   Widget build(BuildContext context) {
     return const CustomBackgroundContainer(
-      child:  Column(
+      child: Column(
         children: [
-          CustomHeaderSection(titleSection: 'All Expenses',),
+          CustomHeaderSection(
+            titleSection: 'All Expenses',
+          ),
           SizedBox(
             height: 16,
           ),

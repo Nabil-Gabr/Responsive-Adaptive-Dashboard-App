@@ -9,12 +9,11 @@ class CustomDotIndicator extends StatelessWidget {
   Widget build(BuildContext context) {
     return AnimatedContainer(
       duration: const Duration(milliseconds: 300),
-      width: active ? 32 :8,
+      width: active ? 32 : 8,
       height: 8,
-      decoration:  BoxDecoration(
-        color: active ? AppColorLight.primaryColor : const  Color(0xffE8E8E8),
-        borderRadius: const  BorderRadius.all(Radius.circular(8))
-      ),
+      decoration: BoxDecoration(
+          color: active ? AppColorLight.primaryColor : const Color(0xffE8E8E8),
+          borderRadius: const BorderRadius.all(Radius.circular(8))),
     );
   }
 }

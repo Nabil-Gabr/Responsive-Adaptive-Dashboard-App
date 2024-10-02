@@ -10,13 +10,8 @@ class DashboardTabletLayout extends StatelessWidget {
     return const Row(
       children: [
         Expanded(child: CustomDrawer()),
-        Expanded(
-          flex: 3,
-          child: DashboardMobileLayout())
-
-        
+        Expanded(flex: 3, child: DashboardMobileLayout())
       ],
     );
   }
 }
-

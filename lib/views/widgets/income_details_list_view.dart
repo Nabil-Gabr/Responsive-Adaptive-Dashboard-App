@@ -5,28 +5,25 @@ import 'package:flutter/material.dart';
 class IncomeDetailsListView extends StatelessWidget {
   const IncomeDetailsListView({super.key});
 
-  static const List<IncomeDetailsItemModel> itemModel=[
+  static const List<IncomeDetailsItemModel> itemModel = [
     IncomeDetailsItemModel(
-      title: 'Design service', 
-      trailing: '40%', 
+      title: 'Design service',
+      trailing: '40%',
       leadingColor: Color(0xff208CC8),
     ),
-
     IncomeDetailsItemModel(
-      title: 'Design product', 
-      trailing: '25%', 
+      title: 'Design product',
+      trailing: '25%',
       leadingColor: Color(0xff4EB7F2),
     ),
-
     IncomeDetailsItemModel(
-      title: 'Product royalti', 
-      trailing: '20%', 
+      title: 'Product royalti',
+      trailing: '20%',
       leadingColor: Color(0xff064061),
     ),
-
     IncomeDetailsItemModel(
-      title: 'Other', 
-      trailing: '2%', 
+      title: 'Other',
+      trailing: '2%',
       leadingColor: Color(0xffE2DECD),
     ),
   ];
@@ -34,7 +31,11 @@ class IncomeDetailsListView extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Column(
-      children: itemModel.map((e) => IncomeDetailsItem(itemModel: e) ,).toList(),
+      children: itemModel
+          .map(
+            (e) => IncomeDetailsItem(itemModel: e),
+          )
+          .toList(),
     );
     // return ListView.builder(
     //   shrinkWrap: true,

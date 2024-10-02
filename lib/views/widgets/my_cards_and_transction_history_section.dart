@@ -10,16 +10,15 @@ class MyCardsAndTransctionHistorySection extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return const CustomBackgroundContainer(
-      child: Column(
-        children: [
-          
-          MyCardsSection(),
-
-          TransctionHistorySection(),
-          SizedBox(height: 24,),
-          IncomeSection(),
-        ],
-      )
-    );
+        child: Column(
+      children: [
+        MyCardsSection(),
+        TransctionHistorySection(),
+        SizedBox(
+          height: 24,
+        ),
+        IncomeSection(),
+      ],
+    ));
   }
 }

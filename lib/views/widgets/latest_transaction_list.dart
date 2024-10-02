@@ -11,17 +11,14 @@ class LatestTransactionList extends StatelessWidget {
         title: 'Lekan Okeowo',
         subTitle: 'demo@gmail.com',
         image: Assets.imagesAvatar3),
-
     UserInfoItemModel(
         title: 'Lekan Okeowo',
         subTitle: 'demo@gmail.comdemo@gmail.comdemo@gmail.com',
         image: Assets.imagesAvatar3),
-
     UserInfoItemModel(
-      title: 'Lekan Okeowo',
-      subTitle: 'demo@gmail.com',
-      image: Assets.imagesAvatar3
-    ),
+        title: 'Lekan Okeowo',
+        subTitle: 'demo@gmail.com',
+        image: Assets.imagesAvatar3),
   ];
 
   @override

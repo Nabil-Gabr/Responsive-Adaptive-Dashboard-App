@@ -12,19 +12,18 @@ class QuickInvoiceAction extends StatelessWidget {
     return const Row(
       children: [
         Expanded(
-          child: CustomButton(
-            textButton: 'Add more details',
-            backgourndColor: AppColorLight.seconderyColor,
-            textColor: AppColorLight.primaryColor,
-          )
+            child: CustomButton(
+          textButton: 'Add more details',
+          backgourndColor: AppColorLight.seconderyColor,
+          textColor: AppColorLight.primaryColor,
+        )),
+        SizedBox(
+          width: 24,
         ),
-        SizedBox(width: 24,),
         Expanded(
-          child: CustomButton(
-            textButton: 'Send Money',
-          )
-        ),
-    
+            child: CustomButton(
+          textButton: 'Send Money',
+        )),
       ],
     );
   }

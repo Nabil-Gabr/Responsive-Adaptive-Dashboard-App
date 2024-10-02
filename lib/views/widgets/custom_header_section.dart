@@ -4,16 +4,20 @@ import 'package:flutter/material.dart';
 
 class CustomHeaderSection extends StatelessWidget {
   const CustomHeaderSection({
-    super.key, required this.titleSection,
+    super.key,
+    required this.titleSection,
   });
   final String titleSection;
 
   @override
   Widget build(BuildContext context) {
-    return  Row(
+    return Row(
       mainAxisAlignment: MainAxisAlignment.spaceBetween,
       children: [
-        Text(titleSection,style: AppStyles.styleSemiBold20(context),),
+        Text(
+          titleSection,
+          style: AppStyles.styleSemiBold20(context),
+        ),
         const AllExpensessHeaderRangeOptions(),
       ],
     );

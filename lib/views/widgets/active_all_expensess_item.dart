@@ -30,7 +30,8 @@ class ActiveAllExpensessItem extends StatelessWidget {
             fit: BoxFit.scaleDown,
             child: Text(
               itemModel.title,
-              style: AppStyles.styleSemiBold16(context).copyWith(color: Colors.white),
+              style: AppStyles.styleSemiBold16(context)
+                  .copyWith(color: Colors.white),
             ),
           ),
           const SizedBox(
@@ -51,7 +52,8 @@ class ActiveAllExpensessItem extends StatelessWidget {
             fit: BoxFit.scaleDown,
             child: Text(
               itemModel.price,
-              style: AppStyles.styleSemiBold24(context).copyWith(color: Colors.white),
+              style: AppStyles.styleSemiBold24(context)
+                  .copyWith(color: Colors.white),
             ),
           ),
         ],

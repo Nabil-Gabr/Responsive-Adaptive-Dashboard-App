@@ -15,10 +15,12 @@ class _IncomeChartDetailsState extends State<IncomeChartDetails> {
   Widget build(BuildContext context) {
     return Padding(
       padding: const EdgeInsets.all(24.0),
-      child: AspectRatio(aspectRatio: 1, child: Padding(
-        padding: const EdgeInsets.all(24.0),
-        child: PieChart(getPieChartData()),
-      )),
+      child: AspectRatio(
+          aspectRatio: 1,
+          child: Padding(
+            padding: const EdgeInsets.all(24.0),
+            child: PieChart(getPieChartData()),
+          )),
     );
   }
 

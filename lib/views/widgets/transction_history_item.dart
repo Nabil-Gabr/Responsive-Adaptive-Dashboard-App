@@ -19,8 +19,8 @@ class TransctionHistoryItem extends StatelessWidget {
         ),
         subtitle: Text(
           itteModel.date,
-          style:
-              AppStyles.styleRegular16(context).copyWith(color: const Color(0xffAAAAAA)),
+          style: AppStyles.styleRegular16(context)
+              .copyWith(color: const Color(0xffAAAAAA)),
         ),
         trailing: Text(
           itteModel.price,

@@ -34,8 +34,9 @@ class _DashboardViewState extends State<DashboardView> {
             )
           : null,
       backgroundColor: AppColorLight.scaffoldBackgroundColor,
-      drawer:
-          MediaQuery.sizeOf(context).width < SizeConfig.tablet ? const CustomDrawer() : null,
+      drawer: MediaQuery.sizeOf(context).width < SizeConfig.tablet
+          ? const CustomDrawer()
+          : null,
       body: AdaptiveLayout(
         mobileLayout: (context) => const DashboardMobileLayout(),
         tabletLayout: (context) => const DashboardTabletLayout(),

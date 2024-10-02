@@ -13,13 +13,16 @@ class DrawerItemListView extends StatefulWidget {
 class _DrawerItemListViewState extends State<DrawerItemListView> {
   final List<DrawerItemModel> items = [
     const DrawerItemModel(title: 'Dashboard', image: Assets.imagesDashboard),
-    const DrawerItemModel(title: 'My Transaction', image: Assets.imagesMyTransctions),
+    const DrawerItemModel(
+        title: 'My Transaction', image: Assets.imagesMyTransctions),
     const DrawerItemModel(title: 'Statistics', image: Assets.imagesStatistics),
-    const DrawerItemModel(title: 'Wallet Account', image: Assets.imagesWalletAccount),
-    const DrawerItemModel(title: 'My Investments', image: Assets.imagesMyInvestments),
+    const DrawerItemModel(
+        title: 'Wallet Account', image: Assets.imagesWalletAccount),
+    const DrawerItemModel(
+        title: 'My Investments', image: Assets.imagesMyInvestments),
   ];
 
-  int active=0;
+  int active = 0;
   @override
   Widget build(BuildContext context) {
     return SliverList.builder(
@@ -29,13 +32,16 @@ class _DrawerItemListViewState extends State<DrawerItemListView> {
           onTap: () {
             if (active != index) {
               setState(() {
-              active=index;
-            });
+                active = index;
+              });
             }
           },
           child: Padding(
             padding: const EdgeInsets.only(top: 20.0),
-            child: DrawerItem(drawerItemModel: items[index], isSelected: active ==index,),
+            child: DrawerItem(
+              drawerItemModel: items[index],
+              isSelected: active == index,
+            ),
           ),
         );
       },

@@ -26,7 +26,7 @@ class ActiveDrawerItem extends StatelessWidget {
       ),
       trailing: Container(
         width: 3.3,
-        color:  AppColorLight.primaryColor,
+        color: AppColorLight.primaryColor,
       ),
     );
   }
