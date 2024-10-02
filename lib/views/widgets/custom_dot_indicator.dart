@@ -1,3 +1,4 @@
+import 'package:dash_board_app/core/constants/app_colors.dart';
 import 'package:flutter/material.dart';
 
 class CustomDotIndicator extends StatelessWidget {
@@ -11,7 +12,7 @@ class CustomDotIndicator extends StatelessWidget {
       width: active ? 32 :8,
       height: 8,
       decoration:  BoxDecoration(
-        color: active ? const Color(0xff4EB7F2) : const  Color(0xffE8E8E8),
+        color: active ? AppColorLight.primaryColor : const  Color(0xffE8E8E8),
         borderRadius: const  BorderRadius.all(Radius.circular(8))
       ),
     );

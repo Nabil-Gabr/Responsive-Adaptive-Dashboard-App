@@ -1,3 +1,4 @@
+import 'package:dash_board_app/core/constants/app_colors.dart';
 import 'package:dash_board_app/core/utils/size_config.dart';
 import 'package:dash_board_app/views/widgets/adaptive_layout.dart';
 import 'package:dash_board_app/views/widgets/custom_drawer.dart';
@@ -32,7 +33,7 @@ class _DashboardViewState extends State<DashboardView> {
                   )),
             )
           : null,
-      backgroundColor: const Color(0xFFF7F9FA),
+      backgroundColor: AppColorLight.scaffoldBackgroundColor,
       drawer:
           MediaQuery.sizeOf(context).width < SizeConfig.tablet ? const CustomDrawer() : null,
       body: AdaptiveLayout(

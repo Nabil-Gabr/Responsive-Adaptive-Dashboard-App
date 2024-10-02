@@ -1,3 +1,4 @@
+import 'package:dash_board_app/core/constants/app_colors.dart';
 import 'package:dash_board_app/core/utils/app_styles.dart';
 import 'package:flutter/material.dart';
 
@@ -17,11 +18,11 @@ class QuickInvoiceHeader extends StatelessWidget {
           width: 48,
           height: 48,
           decoration: const BoxDecoration(
-              color: Color(0xFFF1F1F1),
+              color: AppColorLight.seconderyColor,
               borderRadius: BorderRadius.all(Radius.circular(48))),
           child: const Icon(
             Icons.add,
-            color: Color(0xff4EB7F2),
+            color: AppColorLight.primaryColor,
             size: 18,
           ),
         )

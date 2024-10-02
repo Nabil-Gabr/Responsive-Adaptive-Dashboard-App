@@ -1,3 +1,4 @@
+import 'package:dash_board_app/core/constants/app_colors.dart';
 import 'package:dash_board_app/core/utils/app_styles.dart';
 import 'package:dash_board_app/models/all_expensess_item_model.dart';
 import 'package:dash_board_app/views/widgets/all_expensess_item_header.dart';
@@ -16,7 +17,7 @@ class ActiveAllExpensessItem extends StatelessWidget {
     return Container(
       padding: const EdgeInsets.symmetric(horizontal: 20, vertical: 16),
       decoration: const BoxDecoration(
-          color: Color(0xff4EB7F2),
+          color: AppColorLight.primaryColor,
           borderRadius: BorderRadius.all(Radius.circular(12))),
       child: Column(
         crossAxisAlignment: CrossAxisAlignment.start,

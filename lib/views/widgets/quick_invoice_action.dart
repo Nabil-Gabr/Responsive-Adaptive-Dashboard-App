@@ -1,3 +1,4 @@
+import 'package:dash_board_app/core/constants/app_colors.dart';
 import 'package:dash_board_app/views/widgets/custom_button.dart';
 import 'package:flutter/material.dart';
 
@@ -13,8 +14,8 @@ class QuickInvoiceAction extends StatelessWidget {
         Expanded(
           child: CustomButton(
             textButton: 'Add more details',
-            backgourndColor: Colors.white,
-            textColor: Color(0xff4EB7F2),
+            backgourndColor: AppColorLight.seconderyColor,
+            textColor: AppColorLight.primaryColor,
           )
         ),
         SizedBox(width: 24,),

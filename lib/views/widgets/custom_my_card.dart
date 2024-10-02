@@ -1,3 +1,4 @@
+import 'package:dash_board_app/core/constants/app_colors.dart';
 import 'package:dash_board_app/core/utils/app_images.dart';
 import 'package:dash_board_app/core/utils/app_styles.dart';
 import 'package:flutter/material.dart';
@@ -17,7 +18,7 @@ class CustomMyCard extends StatelessWidget {
           image: DecorationImage(
             image: AssetImage(Assets.imagesCardBackground),
           ),
-          color: Color(0xff4EB7F2),
+          color: AppColorLight.primaryColor,
           borderRadius: BorderRadius.all(Radius.circular(12)),
         ),
         child:  Padding(

@@ -1,3 +1,4 @@
+import 'package:dash_board_app/core/constants/app_colors.dart';
 import 'package:dash_board_app/core/utils/app_styles.dart';
 import 'package:flutter/material.dart';
 
@@ -11,7 +12,7 @@ class AllExpensessHeaderRangeOptions extends StatelessWidget {
     return Container(
       padding: const EdgeInsets.symmetric(horizontal: 12,vertical: 14),
       decoration: const BoxDecoration(
-        color: Color(0xffF1F1F1),
+        color: AppColorLight.seconderyColor,
         borderRadius: BorderRadius.all(Radius.circular(12)),
       ),
       

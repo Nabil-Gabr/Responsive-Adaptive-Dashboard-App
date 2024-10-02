@@ -1,3 +1,4 @@
+import 'package:dash_board_app/core/constants/app_colors.dart';
 import 'package:dash_board_app/core/utils/app_styles.dart';
 import 'package:dash_board_app/models/drawer_item_model.dart';
 import 'package:flutter/material.dart';
@@ -25,7 +26,7 @@ class ActiveDrawerItem extends StatelessWidget {
       ),
       trailing: Container(
         width: 3.3,
-        color:  const Color(0xFF4EB7F2),
+        color:  AppColorLight.primaryColor,
       ),
     );
   }
