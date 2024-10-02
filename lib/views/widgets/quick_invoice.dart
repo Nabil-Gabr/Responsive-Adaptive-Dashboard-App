@@ -1,4 +1,4 @@
-import 'package:dash_board_app/views/widgets/custom_background_container.dart';
+import 'package:dash_board_app/core/widgets/custom_background_container.dart';
 import 'package:dash_board_app/views/widgets/latest_transaction.dart';
 import 'package:dash_board_app/views/widgets/quick_invoice_action.dart';
 import 'package:dash_board_app/views/widgets/quick_invoice_form.dart';

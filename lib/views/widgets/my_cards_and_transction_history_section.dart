@@ -1,4 +1,4 @@
-import 'package:dash_board_app/views/widgets/custom_background_container.dart';
+import 'package:dash_board_app/core/widgets/custom_background_container.dart';
 import 'package:dash_board_app/views/widgets/income_section.dart';
 import 'package:dash_board_app/views/widgets/my_cards_section.dart';
 import 'package:dash_board_app/views/widgets/transction_history_section.dart';

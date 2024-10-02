@@ -1,3 +1,4 @@
+import 'package:dash_board_app/core/utils/size_config.dart';
 import 'package:dash_board_app/views/widgets/income_chart.dart';
 import 'package:dash_board_app/views/widgets/income_chart_details.dart';
 import 'package:dash_board_app/views/widgets/income_details_list_view.dart';
@@ -11,7 +12,7 @@ class IncomeSectionBody extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     double width = MediaQuery.sizeOf(context).width;
-    return width >= 1200 && width < 1750
+    return width >= SizeConfig.desktop && width < 1750
         ? const IncomeChartDetails()
         : const Row(
             crossAxisAlignment: CrossAxisAlignment.center,

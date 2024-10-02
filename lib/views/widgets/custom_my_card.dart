@@ -9,7 +9,7 @@ class CustomMyCard extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     double width = MediaQuery.sizeOf(context).width;
-    print('===========================================================$width');
+    
     return AspectRatio(
       aspectRatio: 84 / 43,
       child: Container(
